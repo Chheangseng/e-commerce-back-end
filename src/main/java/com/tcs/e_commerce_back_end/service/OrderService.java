@@ -106,8 +106,8 @@ public class OrderService {
     long userId = 0;
     var entity =
         orderRepository.filterOrders(
-            ObjectUtils.defaultIfNull(status, ""),
-            ObjectUtils.defaultIfNull(search, ""),
+            ObjectUtils.getIfNull(status, ""),
+            ObjectUtils.getIfNull(search, ""),
             userId,
             pagination.toPageable());
     return entity.map(OrderListMapper::mapItem);

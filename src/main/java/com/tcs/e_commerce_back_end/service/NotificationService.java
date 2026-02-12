@@ -3,6 +3,7 @@ package com.tcs.e_commerce_back_end.service;
 import com.tcs.e_commerce_back_end.exception.ApiExceptionStatusException;
 import com.tcs.e_commerce_back_end.model.dto.notification.DtoNotification;
 import com.tcs.e_commerce_back_end.model.entity.NotificationEntity;
+import com.tcs.e_commerce_back_end.model.mapper.NotificationMapper;
 import com.tcs.e_commerce_back_end.repository.NotificationRepository;
 import com.tcs.e_commerce_back_end.service.user.UserAuthService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -26,7 +27,7 @@ public class NotificationService {
   private final NotificationRepository notificationRepository;
   private final UserAuthService userAuthService;
   private final SimpMessagingTemplate messagingTemplate;
-  private  final  ObjectMapper objectMapper;
+  private final ObjectMapper objectMapper;
 
   public void createNotification(DtoNotification notification) {
     var entity =
@@ -55,7 +56,7 @@ public class NotificationService {
   public List<DtoNotification> listPublicNotification() {
     Sort sort = Sort.by(Sort.Direction.ASC, "createdAt");
     var listEntity = notificationRepository.findAllByUserAccountNull(sort);
-    return mapEntityToDto(listEntity);
+    return NotificationMapper.mapEntityToDto(listEntity,this.objectMapper);
   }
 
   public List<DtoNotification> listPrivateNotification() {
@@ -64,25 +65,7 @@ public class NotificationService {
     var listEntity =
         notificationRepository.findAllByUserAccountIdOrUserAccountNull(
             ObjectUtils.getIfNull(user.getId(), 0L), sort);
-    return mapEntityToDto(listEntity);
-  }
-
-  public List<DtoNotification> mapEntityToDto(List<NotificationEntity> entities) {
-    try {
-      List<DtoNotification> response = new ArrayList<>();
-      for (var item : entities) {
-        var dto = new DtoNotification(item, item.getUserAccount());
-        Map<String, Object> map =
-            objectMapper.readValue(
-                item.getJsonObject(), new TypeReference<Map<String, Object>>() {});
-        dto.setJsonObject(map);
-        response.add(dto);
-      }
-      return response;
-    } catch (JsonProcessingException e) {
-      throw new ApiExceptionStatusException(
-          "Something went wrong with convert string to json", 400);
-    }
+    return NotificationMapper.mapEntityToDto(listEntity,this.objectMapper);
   }
 
   public void pushNotification() {

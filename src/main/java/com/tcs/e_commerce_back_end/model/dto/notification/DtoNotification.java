@@ -1,5 +1,6 @@
 package com.tcs.e_commerce_back_end.model.dto.notification;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tcs.e_commerce_back_end.emuns.NotificationType;
 import com.tcs.e_commerce_back_end.model.entity.NotificationEntity;
 import com.tcs.e_commerce_back_end.model.entity.user.UserAccount;
@@ -21,12 +22,13 @@ public class DtoNotification {
   private NotificationType notificationType;
   private Object jsonObject;
   private Long userId;
-    public DtoNotification(NotificationEntity entity, UserAccount userAccount) {
-        this.id = entity.getId();
-        this.title = entity.getTitle();
-        this.subtitle = entity.getSubtitle();
-        this.haveRead = entity.isHaveRead();
-        this.notificationType = entity.getNotificationType();
-        if (Objects.nonNull(userAccount)) this.userId = userAccount.getId();
-    }
+
+  public DtoNotification(NotificationEntity entity, UserAccount userAccount) {
+    this.id = entity.getId();
+    this.title = entity.getTitle();
+    this.subtitle = entity.getSubtitle();
+    this.haveRead = entity.isHaveRead();
+    this.notificationType = entity.getNotificationType();
+    if (Objects.nonNull(userAccount)) this.userId = userAccount.getId();
+  }
 }

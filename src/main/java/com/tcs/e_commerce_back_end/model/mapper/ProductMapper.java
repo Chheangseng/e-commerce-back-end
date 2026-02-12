@@ -38,7 +38,7 @@ public class ProductMapper {
       throw new ApiExceptionStatusException("Inventory is require", 400);
     }
     ProductMapper.addItemToEntity(dtoProduct, product);
-    product.setAverageRate(ObjectUtils.defaultIfNull(product.getAverageRate(), 0d));
+    product.setAverageRate(ObjectUtils.getIfNull(product.getAverageRate(), 0d));
     return product;
   }
 
@@ -49,7 +49,7 @@ public class ProductMapper {
     product.setPrice(BigDecimal.valueOf(dtoProduct.getPrice()));
     product.setSellPrice(BigDecimal.valueOf(dtoProduct.getSellPrice()));
     ProductMapper.addItemInitToEntity(dtoProduct, product);
-    product.setAverageRate(ObjectUtils.defaultIfNull(product.getAverageRate(), 0d));
+    product.setAverageRate(ObjectUtils.getIfNull(product.getAverageRate(), 0d));
     return product;
   }
 
