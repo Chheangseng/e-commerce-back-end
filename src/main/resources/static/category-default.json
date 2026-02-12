@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Tops"
+  },
+  {
+    "id": 2,
+    "name": "Bottoms"
+  },
+  {
+    "id": 3,
+    "name": "Dresses"
+  },
+  {
+    "id": 4,
+    "name": "Outerwear"
+  },
+  {
+    "id": 5,
+    "name": "Activewear"
+  },
+  {
+    "id": 6,
+    "name": "Loungewear"
+  },
+  {
+    "id": 7,
+    "name": "Underwear & Lingerie"
+  },
+  {
+    "id": 8,
+    "name": "Swimwear"
+  },
+  {
+    "id": 9,
+    "name": "Formal"
+  },
+  {
+    "id": 10,
+    "name": "Casual"
+  }
+]

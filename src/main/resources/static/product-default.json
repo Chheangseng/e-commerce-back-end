@@ -1,0 +1,926 @@
+[
+  {
+    "id": 1,
+    "productName": "Classic T-Shirt",
+    "description": "Comfortable cotton t-shirt perfect for everyday wear.",
+    "price": 20.99,
+    "sellPrice": 27.99,
+    "categoryName": "Outerwear",
+    "productInventories": [
+      {
+        "id": 1,
+        "color": "#FF5733",
+        "size": "S",
+        "stock": 100
+      },
+      {
+        "id": 2,
+        "color": "#FF5733",
+        "size": "M",
+        "stock": 100
+      },
+      {
+        "id": 3,
+        "color": "#FF5733",
+        "size": "L",
+        "stock": 100
+      },
+      {
+        "id": 4,
+        "color": "#33FF57",
+        "size": "S",
+        "stock": 100
+      },
+      {
+        "id": 5,
+        "color": "#33FF57",
+        "size": "M",
+        "stock": 100
+      },
+      {
+        "id": 6,
+        "color": "#33FF57",
+        "size": "L",
+        "stock": 100
+      },
+      {
+        "id": 7,
+        "color": "#3357FF",
+        "size": "S",
+        "stock": 100
+      },
+      {
+        "id": 8,
+        "color": "#3357FF",
+        "size": "M",
+        "stock": 100
+      },
+      {
+        "id": 9,
+        "color": "#3357FF",
+        "size": "L",
+        "stock": 100
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "productName": "Denim Jeans",
+    "description": "Stylish denim jeans with a slim fit design.",
+    "price": 10.99,
+    "sellPrice": 18.99,
+    "categoryName": "Underwear & Lingerie",
+    "productInventories": [
+      {
+        "id": 10,
+        "color": "#F0F8FF",
+        "size": "M",
+        "stock": 200
+      },
+      {
+        "id": 11,
+        "color": "#F0F8FF",
+        "size": "L",
+        "stock": 200
+      },
+      {
+        "id": 12,
+        "color": "#F0F8FF",
+        "size": "XL",
+        "stock": 200
+      },
+      {
+        "id": 13,
+        "color": "#FA8072",
+        "size": "M",
+        "stock": 200
+      },
+      {
+        "id": 14,
+        "color": "#FA8072",
+        "size": "L",
+        "stock": 200
+      },
+      {
+        "id": 15,
+        "color": "#FA8072",
+        "size": "XL",
+        "stock": 200
+      },
+      {
+        "id": 16,
+        "color": "#E6E6FA",
+        "size": "M",
+        "stock": 200
+      },
+      {
+        "id": 17,
+        "color": "#E6E6FA",
+        "size": "L",
+        "stock": 200
+      },
+      {
+        "id": 18,
+        "color": "#E6E6FA",
+        "size": "XL",
+        "stock": 200
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "productName": "Summer Dress",
+    "description": "Lightweight summer dress ideal for warm days.",
+    "price": 30.99,
+    "sellPrice": 37.99,
+    "categoryName": "Tops",
+    "productInventories": [
+      {
+        "id": 19,
+        "color": "#7FFF00",
+        "size": "XS",
+        "stock": 150
+      },
+      {
+        "id": 20,
+        "color": "#7FFF00",
+        "size": "S",
+        "stock": 150
+      },
+      {
+        "id": 21,
+        "color": "#7FFF00",
+        "size": "M",
+        "stock": 150
+      },
+      {
+        "id": 22,
+        "color": "#D2691E",
+        "size": "XS",
+        "stock": 150
+      },
+      {
+        "id": 23,
+        "color": "#D2691E",
+        "size": "S",
+        "stock": 150
+      },
+      {
+        "id": 24,
+        "color": "#D2691E",
+        "size": "M",
+        "stock": 150
+      },
+      {
+        "id": 25,
+        "color": "#FF7F50",
+        "size": "XS",
+        "stock": 150
+      },
+      {
+        "id": 26,
+        "color": "#FF7F50",
+        "size": "S",
+        "stock": 150
+      },
+      {
+        "id": 27,
+        "color": "#FF7F50",
+        "size": "M",
+        "stock": 150
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "productName": "Hooded Sweatshirt",
+    "description": "Cozy hooded sweatshirt for chilly weather.",
+    "price": 43.99,
+    "sellPrice": 47.99,
+    "categoryName": "Dresses",
+    "productInventories": [
+      {
+        "id": 28,
+        "color": "#6495ED",
+        "size": "S",
+        "stock": 80
+      },
+      {
+        "id": 29,
+        "color": "#6495ED",
+        "size": "M",
+        "stock": 80
+      },
+      {
+        "id": 30,
+        "color": "#6495ED",
+        "size": "L",
+        "stock": 80
+      },
+      {
+        "id": 31,
+        "color": "#6495ED",
+        "size": "XL",
+        "stock": 80
+      },
+      {
+        "id": 32,
+        "color": "#FFF8DC",
+        "size": "S",
+        "stock": 80
+      },
+      {
+        "id": 33,
+        "color": "#FFF8DC",
+        "size": "M",
+        "stock": 80
+      },
+      {
+        "id": 34,
+        "color": "#FFF8DC",
+        "size": "L",
+        "stock": 80
+      },
+      {
+        "id": 35,
+        "color": "#FFF8DC",
+        "size": "XL",
+        "stock": 80
+      },
+      {
+        "id": 36,
+        "color": "#DC143C",
+        "size": "S",
+        "stock": 80
+      },
+      {
+        "id": 37,
+        "color": "#DC143C",
+        "size": "M",
+        "stock": 80
+      },
+      {
+        "id": 38,
+        "color": "#DC143C",
+        "size": "L",
+        "stock": 80
+      },
+      {
+        "id": 39,
+        "color": "#DC143C",
+        "size": "XL",
+        "stock": 80
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "productName": "Chino Pants",
+    "description": "Versatile chino pants suitable for any occasion.",
+    "price": 21.99,
+    "sellPrice": 24.99,
+    "categoryName": "Loungewear",
+    "productInventories": [
+      {
+        "id": 40,
+        "color": "#00FFFF",
+        "size": "M",
+        "stock": 120
+      },
+      {
+        "id": 41,
+        "color": "#00FFFF",
+        "size": "L",
+        "stock": 120
+      },
+      {
+        "id": 42,
+        "color": "#00008B",
+        "size": "M",
+        "stock": 120
+      },
+      {
+        "id": 43,
+        "color": "#00008B",
+        "size": "L",
+        "stock": 120
+      },
+      {
+        "id": 44,
+        "color": "#008B8B",
+        "size": "M",
+        "stock": 120
+      },
+      {
+        "id": 45,
+        "color": "#008B8B",
+        "size": "L",
+        "stock": 120
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "productName": "Leather Jacket",
+    "description": "Premium leather jacket with a sleek finish.",
+    "price": 59.99,
+    "sellPrice": 57.99,
+    "categoryName": "Formal",
+    "productInventories": [
+      {
+        "id": 46,
+        "color": "#B8860B",
+        "size": "L",
+        "stock": 60
+      },
+      {
+        "id": 47,
+        "color": "#B8860B",
+        "size": "XL",
+        "stock": 60
+      },
+      {
+        "id": 48,
+        "color": "#A9A9A9",
+        "size": "L",
+        "stock": 60
+      },
+      {
+        "id": 49,
+        "color": "#A9A9A9",
+        "size": "XL",
+        "stock": 60
+      },
+      {
+        "id": 50,
+        "color": "#006400",
+        "size": "L",
+        "stock": 60
+      },
+      {
+        "id": 51,
+        "color": "#006400",
+        "size": "XL",
+        "stock": 60
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "productName": "Sports Shorts",
+    "description": "Breathable sports shorts perfect for workouts.",
+    "price": 5.99,
+    "sellPrice": 8.99,
+    "categoryName": "Bottoms",
+    "productInventories": [
+      {
+        "id": 52,
+        "color": "#8B0000",
+        "size": "XS",
+        "stock": 300
+      },
+      {
+        "id": 53,
+        "color": "#8B0000",
+        "size": "S",
+        "stock": 300
+      },
+      {
+        "id": 54,
+        "color": "#556B2F",
+        "size": "XS",
+        "stock": 300
+      },
+      {
+        "id": 55,
+        "color": "#556B2F",
+        "size": "S",
+        "stock": 300
+      },
+      {
+        "id": 56,
+        "color": "#FF8C00",
+        "size": "XS",
+        "stock": 300
+      },
+      {
+        "id": 57,
+        "color": "#FF8C00",
+        "size": "S",
+        "stock": 300
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "productName": "Formal Shirt",
+    "description": "Elegant formal shirt ideal for office wear.",
+    "price": 10.99,
+    "sellPrice": 13.99,
+    "categoryName": "Swimwear",
+    "productInventories": [
+      {
+        "id": 58,
+        "color": "#9932CC",
+        "size": "S",
+        "stock": 250
+      },
+      {
+        "id": 59,
+        "color": "#9932CC",
+        "size": "M",
+        "stock": 250
+      },
+      {
+        "id": 60,
+        "color": "#8A2BE2",
+        "size": "S",
+        "stock": 250
+      },
+      {
+        "id": 61,
+        "color": "#8A2BE2",
+        "size": "M",
+        "stock": 250
+      },
+      {
+        "id": 62,
+        "color": "#5F9EA0",
+        "size": "S",
+        "stock": 250
+      },
+      {
+        "id": 63,
+        "color": "#5F9EA0",
+        "size": "M",
+        "stock": 250
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "productName": "Woolen Sweater",
+    "description": "Warm woolen sweater for the winter season.",
+    "price": 49.99,
+    "sellPrice": 75.99,
+    "categoryName": "Casual",
+    "productInventories": [
+      {
+        "id": 64,
+        "color": "#D2691E",
+        "size": "M",
+        "stock": 40
+      },
+      {
+        "id": 65,
+        "color": "#D2691E",
+        "size": "L",
+        "stock": 40
+      },
+      {
+        "id": 66,
+        "color": "#D2691E",
+        "size": "XL",
+        "stock": 40
+      },
+      {
+        "id": 67,
+        "color": "#FF7F50",
+        "size": "M",
+        "stock": 40
+      },
+      {
+        "id": 68,
+        "color": "#FF7F50",
+        "size": "L",
+        "stock": 40
+      },
+      {
+        "id": 69,
+        "color": "#FF7F50",
+        "size": "XL",
+        "stock": 40
+      },
+      {
+        "id": 70,
+        "color": "#6495ED",
+        "size": "M",
+        "stock": 40
+      },
+      {
+        "id": 71,
+        "color": "#6495ED",
+        "size": "L",
+        "stock": 40
+      },
+      {
+        "id": 72,
+        "color": "#6495ED",
+        "size": "XL",
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "productName": "Cargo Pants",
+    "description": "Durable cargo pants with multiple pockets.",
+    "price": 20.99,
+    "sellPrice": 32.99,
+    "categoryName": "Activewear",
+    "productInventories": [
+      {
+        "id": 73,
+        "color": "#B8860B",
+        "size": "XS",
+        "stock": 180
+      },
+      {
+        "id": 74,
+        "color": "#B8860B",
+        "size": "S",
+        "stock": 180
+      },
+      {
+        "id": 75,
+        "color": "#B8860B",
+        "size": "M",
+        "stock": 180
+      },
+      {
+        "id": 76,
+        "color": "#B8860B",
+        "size": "L",
+        "stock": 180
+      },
+      {
+        "id": 77,
+        "color": "#DC143C",
+        "size": "XS",
+        "stock": 180
+      },
+      {
+        "id": 78,
+        "color": "#DC143C",
+        "size": "S",
+        "stock": 180
+      },
+      {
+        "id": 79,
+        "color": "#DC143C",
+        "size": "M",
+        "stock": 180
+      },
+      {
+        "id": 80,
+        "color": "#DC143C",
+        "size": "L",
+        "stock": 180
+      },
+      {
+        "id": 81,
+        "color": "#00FFFF",
+        "size": "XS",
+        "stock": 180
+      },
+      {
+        "id": 82,
+        "color": "#00FFFF",
+        "size": "S",
+        "stock": 180
+      },
+      {
+        "id": 83,
+        "color": "#00FFFF",
+        "size": "M",
+        "stock": 180
+      },
+      {
+        "id": 84,
+        "color": "#00FFFF",
+        "size": "L",
+        "stock": 180
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "productName": "Cotton Polo",
+    "description": "Classic cotton polo shirt with a relaxed fit.",
+    "price": 10.99,
+    "sellPrice": 20.99,
+    "categoryName": "Tops",
+    "productInventories": [
+      {
+        "id": 85,
+        "color": "#00CED1",
+        "size": "S",
+        "stock": 220
+      },
+      {
+        "id": 86,
+        "color": "#00CED1",
+        "size": "M",
+        "stock": 220
+      },
+      {
+        "id": 87,
+        "color": "#00CED1",
+        "size": "L",
+        "stock": 220
+      },
+      {
+        "id": 88,
+        "color": "#00FF00",
+        "size": "S",
+        "stock": 220
+      },
+      {
+        "id": 89,
+        "color": "#00FF00",
+        "size": "M",
+        "stock": 220
+      },
+      {
+        "id": 90,
+        "color": "#00FF00",
+        "size": "L",
+        "stock": 220
+      },
+      {
+        "id": 91,
+        "color": "#FFD700",
+        "size": "S",
+        "stock": 220
+      },
+      {
+        "id": 92,
+        "color": "#FFD700",
+        "size": "M",
+        "stock": 220
+      },
+      {
+        "id": 93,
+        "color": "#FFD700",
+        "size": "L",
+        "stock": 220
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "productName": "Linen Blazer",
+    "description": "Stylish linen blazer perfect for summer.",
+    "price": 19.99,
+    "sellPrice": 42.99,
+    "categoryName": "Underwear & Lingerie",
+    "productInventories": [
+      {
+        "id": 94,
+        "color": "#4B0082",
+        "size": "M",
+        "stock": 90
+      },
+      {
+        "id": 95,
+        "color": "#4B0082",
+        "size": "L",
+        "stock": 90
+      },
+      {
+        "id": 96,
+        "color": "#4B0082",
+        "size": "XL",
+        "stock": 90
+      },
+      {
+        "id": 97,
+        "color": "#FFFFF0",
+        "size": "M",
+        "stock": 90
+      },
+      {
+        "id": 98,
+        "color": "#FFFFF0",
+        "size": "L",
+        "stock": 90
+      },
+      {
+        "id": 99,
+        "color": "#FFFFF0",
+        "size": "XL",
+        "stock": 90
+      },
+      {
+        "id": 100,
+        "color": "#F0E68C",
+        "size": "M",
+        "stock": 90
+      },
+      {
+        "id": 101,
+        "color": "#F0E68C",
+        "size": "L",
+        "stock": 90
+      },
+      {
+        "id": 102,
+        "color": "#F0E68C",
+        "size": "XL",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "productName": "Graphic Tee",
+    "description": "Trendy graphic tee with a unique design.",
+    "price": 51.99,
+    "sellPrice": 53.99,
+    "categoryName": "Bottoms",
+    "productInventories": [
+      {
+        "id": 103,
+        "color": "#FF1493",
+        "size": "L",
+        "stock": 75
+      },
+      {
+        "id": 104,
+        "color": "#FF1493",
+        "size": "XL",
+        "stock": 75
+      },
+      {
+        "id": 105,
+        "color": "#ADFF2F",
+        "size": "L",
+        "stock": 75
+      },
+      {
+        "id": 106,
+        "color": "#ADFF2F",
+        "size": "XL",
+        "stock": 75
+      },
+      {
+        "id": 107,
+        "color": "#FF4500",
+        "size": "L",
+        "stock": 75
+      },
+      {
+        "id": 108,
+        "color": "#FF4500",
+        "size": "XL",
+        "stock": 75
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "productName": "Puffer Jacket",
+    "description": "Lightweight puffer jacket for cold days.",
+    "price": 8.99,
+    "sellPrice": 25.99,
+    "categoryName": "Loungewear",
+    "productInventories": [
+      {
+        "id": 109,
+        "color": "#8B008B",
+        "size": "XS",
+        "stock": 140
+      },
+      {
+        "id": 110,
+        "color": "#8B008B",
+        "size": "S",
+        "stock": 140
+      },
+      {
+        "id": 111,
+        "color": "#8B008B",
+        "size": "M",
+        "stock": 140
+      },
+      {
+        "id": 112,
+        "color": "#4682B4",
+        "size": "XS",
+        "stock": 140
+      },
+      {
+        "id": 113,
+        "color": "#4682B4",
+        "size": "S",
+        "stock": 140
+      },
+      {
+        "id": 114,
+        "color": "#4682B4",
+        "size": "M",
+        "stock": 140
+      },
+      {
+        "id": 115,
+        "color": "#D2B48C",
+        "size": "XS",
+        "stock": 140
+      },
+      {
+        "id": 116,
+        "color": "#D2B48C",
+        "size": "S",
+        "stock": 140
+      },
+      {
+        "id": 117,
+        "color": "#D2B48C",
+        "size": "M",
+        "stock": 140
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "productName": "Yoga Pants",
+    "description": "Flexible yoga pants for all fitness activities.",
+    "price": 16.99,
+    "sellPrice": 30.99,
+    "categoryName": "Outerwear",
+    "productInventories": [
+      {
+        "id": 118,
+        "color": "#D8BFD8",
+        "size": "S",
+        "stock": 130
+      },
+      {
+        "id": 119,
+        "color": "#D8BFD8",
+        "size": "M",
+        "stock": 130
+      },
+      {
+        "id": 120,
+        "color": "#D8BFD8",
+        "size": "L",
+        "stock": 130
+      },
+      {
+        "id": 121,
+        "color": "#D8BFD8",
+        "size": "XL",
+        "stock": 130
+      },
+      {
+        "id": 122,
+        "color": "#FF6347",
+        "size": "S",
+        "stock": 130
+      },
+      {
+        "id": 123,
+        "color": "#FF6347",
+        "size": "M",
+        "stock": 130
+      },
+      {
+        "id": 124,
+        "color": "#FF6347",
+        "size": "L",
+        "stock": 130
+      },
+      {
+        "id": 125,
+        "color": "#FF6347",
+        "size": "XL",
+        "stock": 130
+      },
+      {
+        "id": 126,
+        "color": "#40E0D0",
+        "size": "S",
+        "stock": 130
+      },
+      {
+        "id": 127,
+        "color": "#40E0D0",
+        "size": "M",
+        "stock": 130
+      },
+      {
+        "id": 128,
+        "color": "#40E0D0",
+        "size": "L",
+        "stock": 130
+      },
+      {
+        "id": 129,
+        "color": "#40E0D0",
+        "size": "XL",
+        "stock": 130
+      }
+    ]
+  }
+]

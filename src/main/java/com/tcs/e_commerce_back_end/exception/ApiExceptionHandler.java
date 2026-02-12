@@ -1,0 +1,33 @@
+package com.tcs.e_commerce_back_end.exception;
+
+import com.tcs.e_commerce_back_end.exception.dto.ApiException;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class ApiExceptionHandler {
+  @ExceptionHandler(value = {TechnicalException.class})
+  public ResponseEntity<Object> handleTechnicalException(TechnicalException e) {
+    HttpStatus httpStatus = HttpStatus.valueOf(e.statusCode());
+    return new ResponseEntity<>(e.getMessage(), httpStatus);
+  }
+
+  @ExceptionHandler(value = {ApiExceptionStatusException.class})
+  public ResponseEntity<Object> handleTechnicalException(ApiExceptionStatusException e) {
+    HttpStatus httpStatus = HttpStatus.valueOf(e.getStatusCode());
+    var apiException = new ApiException(e.getMessage(),e.getStatusCode(),httpStatus, ZonedDateTime.now(ZoneId.of("Z")));
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
+
+  @ExceptionHandler(MethodArgumentNotValidException.class)
+  public ResponseEntity<Object> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    var apiException = new ApiException(e.getBindingResult().getAllErrors().get(0).getDefaultMessage(),400,httpStatus, ZonedDateTime.now(ZoneId.of("Z")));
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
+}

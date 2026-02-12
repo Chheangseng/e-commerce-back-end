@@ -1,0 +1,65 @@
+server:
+  port: 8090
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+  application:
+    name: e-commerce-back-end
+  datasource:
+    # jdbc:mysql://10.2.6.75:3306/cvi_notification_management_ctaing
+    # jdbc:postgresql://localhost:5432/postgres
+    url: ${DATABASE_URL}
+    # username database
+    username: ${DATABASE_USERNAME}
+    # password database
+    password: ${DATABASE_PASSWORD}
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      #ddl-auto = create-drop , update
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #value for using mySql = org.hibernate.dialect.MySQLDialect
+        #value for using postgres  = org.hibernate.dialect.PostgreSQLDialect
+        dialect: ${DATABASE_TYPE}
+        format_sql: false
+        show_sql: true
+
+mail-config-properties:
+  mail-host: taingchheangseng123@gmail.com
+  mail-secret: iureuftekwxsthga
+
+admin-properties:
+  email: ${ADMIN_EMAIL}
+  password: ${ADMIN_PASSWORD}
+  first-name: ${ADMIN_FIRSTNAME}
+  last-name: ${ADMIN_LASTNAME}
+
+ws-config-properties:
+  path-ws: /ws
+  path-ws-client: /contents
+  path-ws-push: /push-notification
+
+file-system-properties:
+  base-driver-path: ${BASE_PATH}
+  base-directory-folder: ${BASE_DIRECTORY_FOLDER}
+
+system:
+  strip-properties:
+    public-key: ${STRIPE_PK}
+    secret-key: ${STRIPE_SK}
+
+rsa-key:
+  public-key: classpath:rsa/publicKey.pem
+  private-key: classpath:rsa/privateKey.pem
+
+
+logging:
+  level:
+    web: debug
+    socket: debug
